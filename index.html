@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Flower Growth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="sounds/background.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="water-sound">
+        <source src="sounds/water.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="reward-sound">
+        <source src="sounds/reward.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div id="seed-selection">
+        <h2>เลือกเมล็ดพันธุ์</h2>
+        <button onclick="selectSeed('rose')">🌹 กุหลาบ</button>
+        <button onclick="selectSeed('tulip')">🌷 ทิวลิป</button>
+        <button onclick="selectSeed('iris')">💜 ไอริส</button>
+    </div>
+    
+    <div id="garden" style="display: none;">
+        <h2>ดูแลต้นไม้ของคุณ</h2>
+        <img id="plant" src="images/stage1.png" alt="Plant Stage">
+        <button onclick="waterPlant()">💧 รดน้ำ</button>
+    </div>
+    
+    <div id="reward" style="display: none;">
+        <h2>คุณปลูกสำเร็จแล้ว!</h2>
+        <p id="message"></p>
+        <p id="message2"></p>
+        <img id="gift" src="" alt="Reward">
+        <button onclick="shareResult()">แชร์ไปยังโซเชียล</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
