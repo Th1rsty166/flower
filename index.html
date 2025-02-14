@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine Flower Growth</title>
+    <title>Flower Growth</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,24 +18,24 @@
     </audio>
     
     <div id="seed-selection">
-        <h2>เลือกเมล็ดพันธุ์</h2>
-        <button onclick="selectSeed('rose')">🌹 กุหลาบ</button>
-        <button onclick="selectSeed('tulip')">🌷 ทิวลิป</button>
-        <button onclick="selectSeed('iris')">💜 ไอริส</button>
+        <h2>ມາປູກດອກໄມ້ນຳກັນມະະະະ ເລືອກເມັດພັນເລີຍຍ</h2>
+        <button onclick="selectSeed('rose')">🌹 Rose</button>
+        <button onclick="selectSeed('tulip')">🌷 Tilip</button>
+        <button onclick="selectSeed('iris')">💜 Iris</button>
     </div>
     
     <div id="garden" style="display: none;">
-        <h2>ดูแลต้นไม้ของคุณ</h2>
+        <h2>ດອກໄມ້ຕ້ອງການຄວາມໃສໃຈເພື່ອເຕີບໂຕ 😊 </h2>
         <img id="plant" src="images/stage1.png" alt="Plant Stage">
-        <button onclick="waterPlant()">💧 รดน้ำ</button>
+        <button onclick="waterPlant()">💧 ຮົດນ້ຳ</button>
     </div>
     
     <div id="reward" style="display: none;">
-        <h2>คุณปลูกสำเร็จแล้ว!</h2>
+        <h2>ດອກໄມ້ທີ່ດູແລມາໃນທີ່ສຸດກາໃຫຍ່ແລ້ວວວ!</h2>
         <p id="message"></p>
         <p id="message2"></p>
         <img id="gift" src="" alt="Reward">
-        <button onclick="shareResult()">แชร์ไปยังโซเชียล</button>
+        <button onclick="shareResult()">ຮັບດອກໄມ້</button>
     </div>
     
     <script src="script.js"></script>
