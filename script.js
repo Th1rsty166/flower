@@ -7,7 +7,7 @@ function selectSeed(seed) {
     selectedSeed = seed;
     document.getElementById('seed-selection').style.display = 'none';
     document.getElementById('garden').style.display = 'block';
-    document.getElementById('plant').src = `images/${seed}_stage1.jpg`;
+    document.getElementById('plant').src = `images/${seed}_stage1.png`;
 }
 
 function waterPlant() {
