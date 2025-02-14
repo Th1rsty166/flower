@@ -4,6 +4,7 @@ const maxStage = 6;
 document.getElementById('bg-music').play();
 
 function selectSeed(seed) {
+
     selectedSeed = seed;
     document.getElementById('seed-selection').style.display = 'none';
     document.getElementById('garden').style.display = 'block';
