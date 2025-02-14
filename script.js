@@ -4,9 +4,11 @@ const maxStage = 7;
 document.getElementById('bg-music').play();
 
 function selectSeed(seed) {
+
     selectedSeed = seed;
     document.getElementById('seed-selection').style.display = 'none';
     document.getElementById('garden').style.display = 'block';
+    document.getElementById('plant').src = `images/${seed}_stage1.png`;
     document.getElementById('plant').src = `images/${seed}_stage1.png`;
 }
 
@@ -14,6 +16,7 @@ function waterPlant() {
     document.getElementById('water-sound').play();
     if (growthStage < maxStage) {
         growthStage++;
+        document.getElementById('plant').src = `images/${selectedSeed}_stage${growthStage}.png`;
         document.getElementById('plant').src = `images/${selectedSeed}_stage${growthStage}.png`;
     }
     if (growthStage === maxStage) {
