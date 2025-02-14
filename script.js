@@ -1,7 +1,7 @@
 let selectedSeed = '';
 let growthStage = 1;
 const maxStage = 7;
-document.getElementById('bg-music').play();
+
 
 function selectSeed(seed) {
 
@@ -9,7 +9,7 @@ function selectSeed(seed) {
     document.getElementById('seed-selection').style.display = 'none';
     document.getElementById('garden').style.display = 'block';
     document.getElementById('plant').src = `images/${seed}_stage1.png`;
-    document.getElementById('plant').src = `images/${seed}_stage1.png`;
+    document.getElementById('bg-music').play();
 }
 
 function waterPlant() {
