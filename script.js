@@ -1,6 +1,6 @@
 let selectedSeed = '';
 let growthStage = 1;
-const maxStage = 5;
+const maxStage = 6;
 document.getElementById('bg-music').play();
 
 function selectSeed(seed) {
@@ -14,7 +14,7 @@ function waterPlant() {
     document.getElementById('water-sound').play();
     if (growthStage < maxStage) {
         growthStage++;
-        document.getElementById('plant').src = `images/${selectedSeed}_stage${growthStage}.jpg`;
+        document.getElementById('plant').src = `images/${selectedSeed}_stage${growthStage}.png`;
     }
     if (growthStage === maxStage) {
         showReward();
